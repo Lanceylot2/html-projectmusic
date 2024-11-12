@@ -3,38 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musik - HOME</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="jpg" href="./images/music.jpg">
+    <title>Home</title>
+    <link rel="icon" type="image/jpeg" href="./images/favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <div id="logo">
-         <h1>MUSIK</h1>
-        </div>
-    </div>
-    <div id="content">
-        <h2>RECENTLY PLAYED</h2>
-    </div>
-    <div id="main-div">
-        <div id="sidebar">
-        <h3>YOURE MOST PLAYED MUSIC</h3>
-        <ul>
-            <li>ALWAYS</li>
-            <li>Pano</li>
-            <li>I wanna be yours</li>
-            <li>Binhi</li>
-            <li>The man who cant be move</li>
-        </ul>
-        </div>
-        <div id="kontent">
-            <h1>PLAYLIST</h1>
-            <img src="./images/music.jpg">
-            <a href="Song.html">
-            <h3 class="title1">BUMALIK KANA SAKIN</h3>
+    <div class="main-wrapper" id="main-wrapper">
+        <!-- Navigation Section -->
+        <aside class="nav-bar" id="nav-bar">
+            <h3 class="library-title" id="library-title">Your Collection</h3>
+            <p class="library-description" id="library-description">Explore albums to add to your collection</p>
+            <a href="index.html">
+                <button class="nav-button" id="about-button">About Me</button>
             </a>
-            <p class="title1">Silent Sanctuary</p>
-        </div>
+            <a href="login.html">
+                <button class="nav-button" id="logout-button">Logout</button>
+            </a>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="content-area" id="content-area">
+            <!-- Recent Songs Section -->
+            <article class="section-recent-songs" id="section-recent-songs">
+                <h2 class="section-title" id="recent-title">10PM Playlist</h2>
+                <div class="song-container" id="song-container">
+                    <div class="song-item" id="song-palagi">
+                        <img src="./images/palagi.jpg" alt="Shanti Dope - Palagi" class="song-image">
+                        <p class="song-title"><a href="palagi.html">Shanti Dope - Palagi</a></p>
+                    </div>
+                    <div class="song-item" id="song-copilot">
+                        <img src="./images/copilot.jpg" alt="Just Hush - Co-Pilot" class="song-image">
+                        <p class="song-title"><a href="copilot.html">Just Hush - Co-Pilot</a></p>
+                    </div>
+                    <div class="song-item" id="song-citygirl">
+                        <img src="./images/citygirl.jpg" alt="Shanti Dope - City Girl" class="song-image">
+                        <p class="song-title"><a href="citygirl.html">Shanti Dope - City Girl</a></p>
+                    </div>
+                    <div class="song-item" id="song-pakubg">
+                        <img src="./images/pakubg.jpg" alt="Pakundanga (feat. Hev Abi)" class="song-image">
+                        <p class="song-title"><a href="padkundanga.html">Pakundanga (feat. Hev Abi)</a></p>
+                    </div>
+                    <div class="song-item" id="song-Kendrick">
+                        <img src="./images/LOVE.png" alt="Kendrick Lamar - LOVE." class="song-image">
+                        <p class="song-title"><a href="LOVE.html">Kendrick Lamar - LOVE.</a></p>
+                    </div>
+                    <div class="song-item" id="song-Al james">
+                        <img src="./images/gabi.jpg" alt="Al James - Ngayong Gabi" class="song-image">
+                        <p class="song-title"><a href="ngayonggabi.html">Al James - Ngayong Gabi</a></p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Popular Albums Section -->
+            <article class="section-popular-albums" id="section-popular-albums">
+                <h2 class="section-title" id="popular-title">10AM Playlist</h2>
+                <div class="album-container" id="album-container">
+                    <div class="song-item" id="song-20 DEEP">
+                        <img src="./images/oside.jpg" alt="O Side Mafia - 20 Deep" class="song-image">  
+                        <p class="song-title"><a href="20Deep.html">O Side Mafia - 20 DEEP</a></p>
+                    </div>
+                    <div class="song-item" id="song-Heartless">
+                        <img src="./images/heartless.jpg" alt="The weeknd- Heartless" class="song-image">
+                        <p class="song-title"><a href="heartless.html">The Weeknd- Heartless</a></p>
+                    </div>
+                    <div class="song-item" id="song-Babaero">
+                        <img src="./images/babaero.jpg" alt="gin&melodies(ft. Hev ABi) " class="song-image">  
+                        <p class="song-title"><a href="babaero.html">gin&melodies(ft. Hev Abi) - Babaero</a></p>
+                    </div>
+                    <div class="song-item" id="song-pakubg">
+                        <img src="./images/homeboy.jpg" alt="DEMI (ft. Madman Stan)" class="song-image">
+                        <p class="song-title"><a href="homebdy.html">DEMI (ft. Madman Stan) - homebdy</a></p>
+                    </div>
+                    <div class="song-item" id="song-Kendrick">
+                        <img src="./images/Makasarili.jpg" alt="Kristina Dawn (ft. Hev Abi)" class="song-image">
+                        <p class="song-title"><a href="Makasarili.html">Kristina Dawn (ft. Hev Abi) - Makasarili Malambing</a></p>
+                    </div>
+                    <div class="song-item" id="song-Al james">
+                        <img src="./images/akalako.jpg" alt="O.C Dawgs" class="song-image">
+                        <p class="song-title"><a href="akalako.html">O.C Dawgs - Akala Ko Nung Una</a></p>
+                    </div>
+                </div>
+            </article>
+        </section>
     </div>
 </body>
 </html>
